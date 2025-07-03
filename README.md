@@ -309,11 +309,7 @@ visualizer.start_monitoring()
 python src/gui/dashboard.py
 
 # View at http://localhost:8050
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md).
+``
 
 ### Development Setup
 
@@ -357,10 +353,6 @@ pytest
 - [ ] Real-time performance optimization
 - [ ] Advanced attack detection (deepfakes, etc.)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - [Dlib](http://dlib.net/) for facial landmark detection
@@ -371,16 +363,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **Project Link**: https://github.com/yourusername/face-anti-spoofing-system
-
-## 🌟 Star History
-
-If you find this project helpful, please give it a star! ⭐
+- **Author**: Akshita Meena
+- **Email**: akshita10298@gmail.com
+- **Project Link**: [https://github.com/yourusername/face-anti-spoofing-system](https://github.com/AkshitaMeena-Jharwal/antispoofingface.git)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yourusername/face-anti-spoofing-system&type=Date)](https://star-history.com/#yourusername/face-anti-spoofing-system&Date)
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by Akshita Meena**
