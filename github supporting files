@@ -1,0 +1,401 @@
+# requirements.txt
+opencv-python>=4.5.0
+dlib>=19.22.0
+scipy>=1.7.0
+numpy>=1.21.0
+tensorflow>=2.8.0
+mediapipe>=0.8.0
+matplotlib>=3.5.0
+scikit-learn>=1.0.0
+Pillow>=8.3.0
+imutils>=0.5.4
+click>=8.0.0
+tqdm>=4.60.0
+pyyaml>=6.0
+
+# requirements-dev.txt (for development)
+pytest>=6.2.0
+pytest-cov>=2.12.0
+black>=21.9.0
+flake8>=3.9.0
+mypy>=0.910
+pre-commit>=2.15.0
+jupyter>=1.0.0
+notebook>=6.4.0
+streamlit>=1.0.0
+
+# setup.py
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+with open("requirements.txt", "r", encoding="utf-8") as fh:
+    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+
+setup(
+    name="face-anti-spoofing-system",
+    version="1.0.0",
+    author="Your Name",
+    author_email="your.email@example.com",
+    description="A comprehensive real-time face anti-spoofing system",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/yourusername/face-anti-spoofing-system",
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Scientific/Engineering :: Image Processing",
+        "Topic :: Security",
+    ],
+    python_requires=">=3.7",
+    install_requires=requirements,
+    extras_require={
+        "dev": [
+            "pytest>=6.2.0",
+            "pytest-cov>=2.12.0",
+            "black>=21.9.0",
+            "flake8>=3.9.0",
+            "mypy>=0.910",
+            "pre-commit>=2.15.0",
+        ],
+        "gui": [
+            "streamlit>=1.0.0",
+            "tkinter",
+        ],
+        "api": [
+            "flask>=2.0.0",
+            "fastapi>=0.70.0",
+            "uvicorn>=0.15.0",
+        ],
+    },
+    entry_points={
+        "console_scripts": [
+            "face-antispoofing=src.main:main",
+        ],
+    },
+    include_package_data=True,
+    package_data={
+        "": ["*.md", "*.txt", "*.yml", "*.yaml"],
+    },
+)
+
+# .gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Project specific
+*.dat
+*.h5
+*.pkl
+*.joblib
+data/raw/
+data/processed/
+models/checkpoints/
+logs/
+*.mp4
+*.avi
+*.mov
+temp/
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# LICENSE (MIT License)
+MIT License
+
+Copyright (c) 2024 Your Name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+# CONTRIBUTING.md
+# Contributing to Face Anti-Spoofing System
+
+We love your input! We want to make contributing to this project as easy and transparent as possible.
+
+## Development Process
+
+1. Fork the repo and create your branch from `main`
+2. If you've added code that should be tested, add tests
+3. If you've changed APIs, update the documentation
+4. Ensure the test suite passes
+5. Make sure your code lints
+6. Issue that pull request!
+
+## Any contributions you make will be under the MIT Software License
+
+When you submit code changes, your submissions are understood to be under the same [MIT License](LICENSE) that covers the project.
+
+## Report bugs using Github's [issues](https://github.com/yourusername/face-anti-spoofing-system/issues)
+
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/yourusername/face-anti-spoofing-system/issues/new).
+
+## Write bug reports with detail, background, and sample code
+
+**Great Bug Reports** tend to have:
+
+- A quick summary and/or background
+- Steps to reproduce
+- What you expected would happen
+- What actually happens
+- Notes (possibly including why you think this might be happening)
+
+## Code Style
+
+* Use Black for Python code formatting
+* Follow PEP 8 guidelines
+* Add type hints where appropriate
+* Write descriptive docstrings
+
+## Testing
+
+* Write tests for new features
+* Ensure all tests pass before submitting PR
+* Aim for good test coverage
+
+## License
+
+By contributing, you agree that your contributions will be licensed under its MIT License.
+
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9, '3.10']
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements-dev.txt
+    
+    - name: Lint with flake8
+      run: |
+        flake8 src tests --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 src tests --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    
+    - name: Test with pytest
+      run: |
+        pytest tests/ --cov=src --cov-report=xml
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: true
+
+# environment.yml (for conda users)
+name: face-antispoofing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - opencv
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - notebook
+  - pip:
+    - dlib>=19.22.0
+    - tensorflow>=2.8.0
+    - mediapipe>=0.8.0
+    - imutils>=0.5.4
+    - click>=8.0.0
+    - tqdm>=4.60.0
+    - pyyaml>=6.0
