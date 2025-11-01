@@ -361,14 +361,4 @@ pytest
 - [TensorFlow](https://tensorflow.org/) for deep learning framework
 - CASIA-FASD dataset for training and evaluation
 
-## 📞 Contact
 
-- **Author**: Akshita Meena
-- **Email**: akshita10298@gmail.com
-- **Project Link**: [https://github.com/yourusername/face-anti-spoofing-system](https://github.com/AkshitaMeena-Jharwal/antispoofingface.git)
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/face-anti-spoofing-system&type=Date)](https://star-history.com/#yourusername/face-anti-spoofing-system&Date)
-
----
-
-**Made with ❤️ by Akshita Meena**
