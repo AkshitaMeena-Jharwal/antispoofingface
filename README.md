@@ -1,10 +1,4 @@
 # 🛡️ Face Anti-Spoofing System
-
-[![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![OpenCV](https://img.shields.io/badge/opencv-4.5+-green.svg)](https://opencv.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://github.com/yourusername/face-anti-spoofing-system/workflows/CI/badge.svg)](https://github.com/yourusername/face-anti-spoofing-system/actions)
-
 A comprehensive real-time face anti-spoofing system that detects whether a face is real (live) or spoofed (photo, video, or 3D mask attack) using computer vision and deep learning techniques.
 
 ## 🚀 Features
