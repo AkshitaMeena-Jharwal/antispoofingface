@@ -1,6 +1,8 @@
 # 🛡️ Face Anti-Spoofing System
 A comprehensive real-time face anti-spoofing system that detects whether a face is real (live) or spoofed (photo, video, or 3D mask attack) using computer vision and deep learning techniques.
 
+![.]([./images/my-new-image.png](https://github.com/AkshitaMeena-Jharwal/antispoofingface/blob/main/src/image-1762745917937.jpeg))
+
 ## 🚀 Features
 
 - **Real-time Detection**: Live face spoofing detection through webcam
