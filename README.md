@@ -6,6 +6,7 @@ A comprehensive real-time face anti-spoofing system that detects whether a face 
 ![.](https://github.com/AkshitaMeena-Jharwal/antispoofingface/blob/main/src/image-1762745936370.jpeg)
 ![.](https://github.com/AkshitaMeena-Jharwal/antispoofingface/blob/main/src/image-1762745942171.jpeg)
 ![.](https://github.com/AkshitaMeena-Jharwal/antispoofingface/blob/main/src/image-1762745947725.jpeg)
+![.](https://github.com/AkshitaMeena-Jharwal/antispoofingface/blob/main/src/Screenshot%202025-11-10%20090551.png)
 ## 🚀 Features
 
 - **Real-time Detection**: Live face spoofing detection through webcam
